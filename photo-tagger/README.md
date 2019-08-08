@@ -1,4 +1,4 @@
-# firstapp
+# Vue.js Photo Tagger App Frontend 
 
 ## Project setup
 ```
