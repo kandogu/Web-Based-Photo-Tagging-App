@@ -23,4 +23,4 @@ Also, your bucket should have Photo objects which has these attributes;
 
 ## PS
 ```
-If, I can do it, I will post here a link for live version.
+If I can do it, I will post here a link for live version.
