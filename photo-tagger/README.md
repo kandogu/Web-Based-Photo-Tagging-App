@@ -27,3 +27,9 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## About Project
+```
+This project uses Vue.js.
+It is connected with photo-tagger-api and it sends request with axios to api.
+```
