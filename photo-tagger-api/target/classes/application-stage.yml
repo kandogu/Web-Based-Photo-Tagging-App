@@ -1,0 +1,3 @@
+spring:
+  couchbase:
+    bootstrap-hosts: 10.141.0.142

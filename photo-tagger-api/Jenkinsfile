@@ -1,0 +1,6 @@
+@Library('pipeline-libs') _
+dockerBuild{
+	app_name = "photo-tagger-api"
+	slack_channel = ""
+	sonarQube = true
+}

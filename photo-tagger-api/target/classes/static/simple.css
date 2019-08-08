@@ -1,0 +1,82 @@
+body {
+    background-color: #cd4851;
+}
+
+.center-block {
+    display: table;  /* Instead of display:block */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.buttonController {
+    width: 130px;
+    margin-top: 5px;
+    background: #cd4851;
+    color: white;
+    transition: all .3s ease-in-out;
+    border-color: #cd4851;
+    user-select: none;
+    outline: none;
+    border-radius: 10px;
+
+}
+
+.buttonController:hover {
+    transform: scale(0.9);
+    box-shadow: 1px 1px 0px black;
+    transition: all .3s ease-in-out;
+    background: #d35f67;
+    color: white;
+    border-color: #d35f67;
+    user-select: none;
+    outline: none;
+}
+
+.textBar {
+    margin-top: 20px;
+}
+
+.form-controller{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 50px;
+}
+
+.btn-container {
+    max-width: 500px;
+    max-height: 500px;
+}
+.login-form{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 5%;
+    outline: none;
+}
+
+.errorMsg {
+    color: white;
+}
+
+.img-thumbnail {
+    padding: 10px;
+}
+
+.bottom-div{
+    margin-top: 20px;
+}
+
+.upper-div {
+    margin-top: 20px;
+}
+

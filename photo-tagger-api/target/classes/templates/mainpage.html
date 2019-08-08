@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tag Photo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../static/simple.css" rel="stylesheet"/>
+    <link href="../simple.css" rel="stylesheet" type="text/css"/>
+    <link th:href="@{../static/simple.css}" type=text/css rel="stylesheet"/>
+
+</head>
+
+<body>
+<div class="pics, container, upper-div">
+    <table>
+        <tr>
+            <img id="myImage" th:src="${homeImg}" class="img-fluid, img-thumbnail, rounded mx-auto d-block"
+                 alt="Responsive image">
+        </tr>
+    </table>
+</div>
+<div class="bottom-div">
+    <div class="textBar, container, center-block">
+        <form th:action="tag" method="post">
+            <input class="form-control, form-controller" name="Tag" type="text" placeholder="Write a new Tag"/>
+        </form>
+    </div>
+    <div class="tags, btn-container, container">
+        <form th:action="tag" method="post" class="formControl, center-block">
+            <div class="row, button-group" role="group" aria-label="Basic example">
+                <button th:method="post" onclick="call(value)"
+                        class="button btn-secondary btn-sm buttonController" id="btn1" name="Tag" value="Dış Cephe"> Dış
+                    Cephe
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button btn-secondary btn-sm buttonController" id="btn2" name="Tag" value="Mutfak"> Mutfak
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button btn-secondary btn-sm buttonController" id="btn3" name="Tag" value="Banyo"> Banyo
+                </button>
+            </div>
+            <div class="row, button-group">
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn4" name="Tag"
+                        value="Oturma Odası"> Oturma Odası
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn5" name="Tag" value="Yatak Odası">
+                    Yatak Odası
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn6" name="Tag" value="Balkon">
+                    Balkon
+                </button>
+            </div>
+            <div class="row, button-group">
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn7" name="Tag" value="Antre"> Antre
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn8" name="Tag" value="Çatı"> Çatı
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn9" name="Tag" value="Salon"> Salon
+                </button>
+            </div>
+            <div class="row, button-group">
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn10" name="Tag" value="Havuz">
+                    Havuz
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn11" name="Tag" value="Villa">
+                    Villa
+                </button>
+                <button th:method="post" onclick="call(value)"
+                        class="button, btn-secondary btn-sm, buttonController" id="btn12" name="Tag" value="Bahçe">
+                    Bahçe
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="btn-container, container, center-block">
+        <form th:action="logout">
+            <button class="button, btn-secondary btn-sm, buttonController">Logout</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+
+</body>
+
+</html>
