@@ -50,7 +50,6 @@
         mounted: function () {
             this.getPic();
             if (this.$cookies.get("userName") == null) {
-                this.$timer.start();
                 this.$router.push({path: "login"})
             }
         },
